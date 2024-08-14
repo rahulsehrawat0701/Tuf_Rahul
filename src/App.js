@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Banner from './components/Banner';
+import Dashboard from './components/Dashboard';
 
 function App() {
+  const [bannerData, setBannerData] = useState({
+    isVisible: true,
+    description: 'Welcome to our website!',
+    timer: 60,
+    link: 'https://example.com'
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ fontFamily: 'Arial, sans-serif', padding: '20px' }}>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <Banner
+          isVisible={bannerData.isVisible}
+          description={bannerData.description}
+          timer={bannerData.timer}
+          link={bannerData.link}
+        />
+        <Dashboard bannerData={bannerData} setBannerData={setBannerData} />
+      </div>
     </div>
   );
 }

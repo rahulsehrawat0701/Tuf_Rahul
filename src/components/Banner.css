@@ -1,0 +1,29 @@
+.banner {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 8px; /* Rounded corners for a modern feel */
+    padding: 16px; /* Adequate padding for breathing space */
+    text-align: center; /* Centered text for readability */
+    max-width: 400px; /* Max width to control the banner's size */
+    margin: 20px auto; /* Centering the banner in the viewport */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .banner p {
+    margin: 0 0 8px; /* Space between paragraphs */
+    color: #343a40; /* Darker text for readability */
+    font-size: 16px; /* Legible font size */
+  }
+  
+  .banner-link {
+    text-decoration: none; /* Remove underline by default */
+    color: #007bff; /* Blue color for links */
+    font-weight: bold; /* Bold text for emphasis */
+  }
+  
+  .banner-link:hover {
+    text-decoration: underline; /* Underline only on hover */
+    color: #0056b3; /* Darker blue on hover for interactivity */
+  }
+  
